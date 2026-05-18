@@ -6,10 +6,5 @@
  **                                                          **
  **************************************************************
  **************************************************************/
-function fb_authenticate(){
-    // authenticate with Google
-}
 
-function fb_error(){
-    // Don't forget your error handling!
-}
+
