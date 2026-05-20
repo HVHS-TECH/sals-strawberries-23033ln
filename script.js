@@ -1,10 +1,14 @@
 
 console.log("Running Sal's Strawberries")
+console.log(user + "likes" + favoriteFruit);
 // const favoriteFruit = document.getElementById("favoriteFruit").value;
 
 // the vars that i will need for the code //
 var GLOBAL_user;
 var authenticationListener; 
+let user = "toby";
+firebase.database( ).ref('/'). set(favoriteFruit);
+
 
 // to read errors //
 function fb_readError(error) {

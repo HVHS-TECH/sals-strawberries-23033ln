@@ -15,13 +15,13 @@ body {
 }
 
 h1 {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 0, 0);
   font-size: 2.5rem;
   margin-bottom: 0;
 }
 
 h2 {
-  color: #000000;
+  color: #700101;
   font-size: 1.2rem;
   margin-top: 0.2rem;
 }
@@ -35,7 +35,7 @@ input {
   width: 100%;
   padding: 0.5rem;
   margin-top: 0.3rem;
-  border: 1px solid #000000;
+  border: 1px solid #8d0303;
   border-radius: 6px;
 }
 
@@ -43,14 +43,14 @@ button {
   margin-top: 1.5rem;
   padding: 0.7rem 1.2rem;
   background-color: #000000;
-  color: rgb(255, 255, 255);
+  color: rgb(252, 252, 252);
   border: none;
   border-radius: 6px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #000000;
+  background-color: #660000;
 }
 
 #statusMessage {
