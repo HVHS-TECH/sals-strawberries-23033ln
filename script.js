@@ -1,14 +1,25 @@
 
 console.log("Running Sal's Strawberries")
-console.log(user + "likes" + favoriteFruit);
 // const favoriteFruit = document.getElementById("favoriteFruit").value;
+
+// testing //
+var person = {
+  firstName: "Coby",
+  lastName: "Rollo",
+  age: 100000000000000000000,
+  eyeColor: "ghghghgh"
+};
+person["age"] = 20;
+
+console.log(person["eyeColor"])
+console.log(person["firstName"])
+console.log(person["lastName"])
+console.log(person["age"])
+///////////////
 
 // the vars that i will need for the code //
 var GLOBAL_user;
-var authenticationListener; 
-let user = "toby";
-firebase.database( ).ref('/'). set(favoriteFruit);
-
+var authenticationListener;
 
 // to read errors //
 function fb_readError(error) {
@@ -53,27 +64,39 @@ function fb_logout() {
 
 function display(snapshot) {
   let dbData = snapshot.val();
-    HTML_OUTPUT.innerHTML = "";
+  HTML_OUTPUT.innerHTML = "";
   console.log(dbData);
-if (dbData == null) {
-  HTML_OUTPUT.innerHTML = "There is no data";
-} else {
-  snapshot.forEach(stringifiedData);
-  console.log("data transfered")
+  if (dbData == null) {
+    HTML_OUTPUT.innerHTML = "There is no data";
+  } else {
+    snapshot.forEach(stringifiedData);
+    console.log("data transfered")
+  }
 }
-}
-function stringifiedData(strings){
+function stringifiedData(strings) {
   let data = strings.val();
   console.log(strings);
   let usertext = "";
   for (let [usernames] of strings.key) {
-  usertext += usernames
-}
- HTML_OUTPUT.innerHTML += usertext + ": " + data + "<br>";
+    usertext += usernames
+  }
+  HTML_OUTPUT.innerHTML += usertext + ": " + data + "<br>";
 }
 
-function writeForm(){
+
+
+
+
+
+// for the form to save the stuff that they choose //
+
+
+function writeForm() {
+ 
     // Get the form data
     const favoriteFruit = document.getElementById("favoriteFruit").value;
+     firebase.database().ref('food/customers').set( '');
 }
+
+
 
