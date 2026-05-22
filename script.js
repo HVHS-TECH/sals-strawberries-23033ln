@@ -90,7 +90,6 @@ function stringifiedData(strings) {
 
 // for the form to save the stuff that they choose //
 
-
 function writeForm() {
  
     // Get the form data
